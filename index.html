@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Henrique | Dev Front-end</title>
+   <link rel="icon" href="./img/code.png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script>
+      tailwind.config = {
+         darkMode: 'class',
+      }
+   </script>
+   <style type="text/tailwindcss">
+      @layer utilities {
+         .display-none {
+         display: none;
+         }
+
+         @media (max-width: 650px) {
+            .px-48 {
+               padding: 1rem 6.5rem;
+            }
+         }
+      }
+    </style>
+</head>
+
+<body class="bg-gray-400 flex flex-col h-screen justify-center items-center dark:bg-gray-800">
+   <main
+      class="relative bg-gray-300 h-180 p-5 rounded-2xl align-center flex items-center flex-col w-84 dark:bg-gray-600">
+      <img class="mb-6 mt-5 w-36 rounded-full" src="./img/icon.jpeg" alt="Henrique | Desenvolvedor Front-end">
+      <p class="mb-1 text-center text-gray text-lg font-bold typing-text dark:text-white"></p>
+      <p class="mb-12 text-center text-sm text-gray px-2 italic dark:text-white">Graduando de Análise e Desenvolvimento
+         de
+         Sistemas.</p>
+      <ul class="flex flex-col gap-4 text-center content-center">
+         <li class="flex bg-gray-200 items-center px-48 py-4 gap-2 rounded-2xl cursor-pointer dark:bg-gray-500">
+            <i class="fa-brands fa-linkedin mt-1" style="color: #bbacac;"></i>
+            <a class="text-gray text-custom font-bold text-lg dark:text-white"
+               href="https://www.linkedin.com/in/henriquepinheiroxavier/" target="_blank">LinkedIn</a>
+         </li>
+         <li class=" flex items-center bg-zinc-200 px-48 py-4 gap-2 rounded-2xl cursor-pointer dark:bg-gray-500">
+            <i class="fa-brands fa-github mt-1" style="color: #bbacac;"></i>
+            <a class="text-gray text-custom font-bold text-lg dark:text-white" href="https://github.com/henriquepx"
+               target="_blank">Github</a>
+         </li>
+         <li class="flex items-center bg-zinc-200 px-48 py-4 gap-2 rounded-2xl cursor-pointer dark:bg-gray-500">
+            <i class="fa-solid fa-envelope mt-1" style="color: #bbacac;"></i>
+            <a class="text-gray text-custom font-bold text-lg dark:text-white"
+               href="mailto:heniquepinheiroxavier@gmail.com" target="_blank">E-mail</a>
+         </li>
+         <li class="flex items-center bg-zinc-200 px-48 py-4 gap-2 rounded-2xl cursor-pointer dark:bg-gray-500">
+            <i class="fa-solid fa-file-export mt-1" style="color: #bbacac;"></i>
+            <a class="text-gray text-custom font-bold text-lg dark:text-white" href="./CV.pdf" download="cv.pdf"
+               target="_blank">Currículo</a>
+         </li>
+         <li class="flex items-center bg-zinc-200 px-48 py-4 mb-12 gap-2 rounded-2xl cursor-pointer dark:bg-gray-500">
+            <i class="fa-brands fa-whatsapp mt-1" style="color: #bbacac;"></i>
+            <a class="text-gray text-custom font-bold text-lg dark:text-white"
+               href="https://wa.me/5521964823939?text=Ol%C3%A1,%20Henrique.%20Gostaria%20de%20entrar%20em%20contato%20com%20voc%C3%AA..."
+               target="_blank">Whatsapp</a>
+         </li>
+      </ul>
+      <div class="absolute bottom-4">
+         <input type="checkbox" name="change-theme" id="change-theme" class="hidden" />
+         <label for="change-theme">
+            <i class="fa fa-xl fa-sun sun cursor-pointer" style="color: #bbacac;"></i>
+            <i class="fa fa-xl fa-moon moon cursor-pointer" style="color: #616161;"></i>
+         </label>
+      </div>
+   </main>
+
+   <script src="./main.js"></script>
+</body>
+
+</html>
